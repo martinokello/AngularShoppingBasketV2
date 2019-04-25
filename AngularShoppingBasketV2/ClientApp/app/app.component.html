@@ -7,19 +7,22 @@
             <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
         </p>
     </div>
+    <ul class="nav" style="text-align:center; background-color:silver;">
+        <!--
+       <li class="nav" style="padding:5px !important; background-color:black !important;">
+          <a style="color:white !important;font-weight:bolder;" routerLink="/shop">Shop Contents</a>
+      </li>
+      <li><span style="color:white; font-weight:bolder;"> &nbsp; </span></li>
+      <li class="nav" style="padding:5px !important; background-color:black !important;">
+          <a style="color:white !important; font-weight:bolder;" routerLink="/basket">Basket Contents</a>
+      </li>
+    -->
+        <li><span style="color:white; font-weight:bolder;"> &nbsp; </span></li>
+        <li class="nav" style="padding:5px !important; background-color:black !important;">
+            <a style="color:white !important; font-weight:bolder;" routerLink="/">Online Contents</a>
+        </li>
+    </ul>
 </div>
+
 <h3>Here are some links to help you start: </h3>
-<ul>
-    <li>
-        <h4><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h4>
-    </li>
-    <li>
-        <h4><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h4>
-    </li>
-    <li>
-        <h4><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h4>
-    </li>
-    <li>
-        <h4><a target="_blank" rel="noopener" href="http://getbootstrap.com/docs/4.1/getting-started/introduction/">Bootstrap</a></h4>
-    </li>
-</ul>
+<router-outlet></router-outlet>

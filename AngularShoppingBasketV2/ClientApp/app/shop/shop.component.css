@@ -1,0 +1,8 @@
+div.header{background-color:skyblue;}
+
+div.header div{padding:6px; background-color:transparent; text-align:center; vertical-align:text-bottom;color:white;}
+
+div.body .row:nth-child(odd){background-color:whitesmoke;}
+div.body>div{padding:5px;}
+.gross-total{padding:10px; background-color:brown; color:black; font-weight:bolder;}
+.alignVcenter{vertical-align: middle; text-align: center;}

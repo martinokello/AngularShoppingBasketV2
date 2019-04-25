@@ -10,6 +10,12 @@ var AppComponent = /** @class */ (function () {
         this.title = 'Welcome to Angular';
         this.subtitle = '.NET Core + Angular CLI v6 + Bootstrap & FontAwesome + Swagger Template';
     }
+    AppComponent.prototype.totalChanged = function ($valueChange) {
+        this.grossTotal = $valueChange;
+    };
+    AppComponent.prototype.ngOnInit = function () {
+        this.grossTotal = 0.00;
+    };
     AppComponent = __decorate([
         Component({
             selector: 'app-root',

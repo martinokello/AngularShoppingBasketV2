@@ -1,0 +1,5 @@
+<div class="container-fluid" style="width:40vw;">
+    <app-basket [grossTotal]="grossTotal"></app-basket>
+    <hr />
+    <app-shop (grossTotalChanged)="totalChanged($event)"> </app-shop>
+</div>

@@ -1,0 +1,41 @@
+<div class="container-fluid" style="width:40vw;">
+  <div style="width:40vw;">
+  <p>
+    shop!
+  </p>
+  <div class="row header">
+    <div class="col-lg-1">
+      Id
+    </div>  
+    <div class="col-lg-3">
+      Product Name
+    </div>  
+    <div class="col-lg-3">
+      Product Description
+    </div> 
+    <div class="col-lg-3">
+      Product Price
+    </div>
+  </div>
+  <div #shopView>
+    <div class="body">
+      <div *ngFor="let prod of shop" class="row" id="prod{{prod.productId}}">
+          <div class="col-lg-1 first-cell">
+            {{prod.productId}}
+          </div>  
+          <div class="col-lg-3">
+            {{prod.productName}}
+          </div>  
+          <div class="col-lg-3">
+            {{prod.productDescription}}
+          </div> 
+          <div class="col-lg-2">
+            {{prod.productPrice}}
+          </div>  
+          <div class="col-lg-3">
+            <input type="button" class="btn" value="Add to Basket" (click)="addToBasket($event)"/>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

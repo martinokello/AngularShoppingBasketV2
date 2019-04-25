@@ -1,0 +1,48 @@
+<div class="container-fluid" style="width:40vw;">
+<p>
+  Your basket Contents!<br/>
+  <b class="gross-total">
+    Your gross is: £{{grossTotal}}.
+  </b>
+</p>
+<div class="row header">
+  <div class="col-lg-1">
+    Product Id
+  </div>  
+  <div class="col-lg-3">
+    Product Name
+  </div>  
+  <div class="col-lg-3">
+    Product Description
+  </div> 
+  <div class="col-lg-2">
+    Product Price
+  </div>
+  <div class="col-lg-3">
+    Remove from Basket
+  </div>
+</div>
+<div class="body">
+<div *ngFor="let prod of basket" class="row" id="prod{{prod.productId}}">
+    <div class="col-lg-1 first-cell">
+      {{prod.productId}}
+    </div>  
+    <div class="col-lg-3">
+      {{prod.productName}}
+    </div>  
+    <div class="col-lg-3">
+      {{prod.productDescription}}
+    </div> 
+    <div class="col-lg-2">
+      {{prod.productPrice}}
+    </div>  
+    <div class="col-lg-3">
+      <input type="button" class="btn" style="margin:2px 0px;" value="Remove" (click)="removeFromBasket($event)"/>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <b class="gross-total">Your gross is: £{{grossTotal}}.
+      </b>
+</div>
+</div>

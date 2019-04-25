@@ -1,0 +1,8 @@
+div.header{background-color:skyblue;}
+
+div.header div{padding:6px; background-color:transparent; text-align:center; vertical-align:text-bottom;color:white;}
+
+div.body .row:nth-child(even){background-color:burlywood;text-align:left;vertical-align: center;}
+div.body .row:nth-child(odd){background-color:whitesmoke;}
+div.row body>div{padding:5px;}
+.alignVcenter{vertical-align: middle;}
