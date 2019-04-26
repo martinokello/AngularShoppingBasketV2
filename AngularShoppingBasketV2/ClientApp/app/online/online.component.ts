@@ -7,6 +7,7 @@ import { Component, OnInit,ViewChild, Input, Output, EventEmitter } from '@angul
 })
 export class OnlineComponent implements OnInit {
     grossTotal: number;
+    yearNow: number;
 
     public totalChanged($event: number): void {
         this.grossTotal = $event;
@@ -15,5 +16,6 @@ export class OnlineComponent implements OnInit {
     ngOnInit(): void {
 
         this.grossTotal = 0.00;
+        this.yearNow = new Date().getFullYear();
     }
 }

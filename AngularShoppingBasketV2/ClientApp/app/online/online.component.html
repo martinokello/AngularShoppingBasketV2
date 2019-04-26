@@ -1,5 +1,8 @@
-<div class="container-fluid" style="width:40vw;">
+<div class="container-fluid" style="width:40vw;margin-bottom:10px;">
     <app-basket [grossTotal]="grossTotal"></app-basket>
     <hr />
     <app-shop (grossTotalChanged)="totalChanged($event)"> </app-shop>
+</div>
+<div style="padding:10px; background-color:brown;color:black; font-weight:bolder;">
+    &copy; 2007 - {{yearNow}} MartinLayooInc (<a href="https://wwww.martinlayooinc.co.uk">www.martinlayooinc.co.uk</a>)
 </div>
